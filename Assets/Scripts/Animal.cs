@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class Animal : MonoBehaviour
 {
-    
-    [SerializeField] private float downBound = -13f;
-    [SerializeField] private float topBound = 12f;
-    public float animalSpeed;
+    private float downBound = -15f;
+    private float animalSpeed = 5f;
     void Start()
     {
         
@@ -15,10 +13,12 @@ public class Animal : MonoBehaviour
 
     void Update()
     {
+        // Moves animal
         transform.Translate(Vector3.forward * Time.deltaTime * animalSpeed);
 
-        
-        if (transform.position.z < downBound && transform.position.z > topBound){
+        // Conrols if game over
+        if (transform.position.z < downBound){
+            Debug.Log("Game Over!");
             Destroy(gameObject);
         }
     }

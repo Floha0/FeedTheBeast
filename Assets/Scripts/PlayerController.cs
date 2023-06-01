@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public GameObject animalPrefab;
     public GameObject projectilePrefab;
     [SerializeField] private float xRange = 14f;
     private float moveHorizontal;
-    public float speed;
+    private float speed = 12f;
 
     void Start()
     {
@@ -35,6 +34,5 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space)){
             Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
         }
-
     }
 }
