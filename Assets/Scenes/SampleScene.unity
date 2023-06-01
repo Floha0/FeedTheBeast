@@ -428,7 +428,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3424353221788745380, guid: df4bd88ed7fc09c498b7b5e2d9d7f097, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.1
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 3424353221788745380, guid: df4bd88ed7fc09c498b7b5e2d9d7f097, type: 3}
       propertyPath: m_LocalRotation.w
@@ -495,7 +495,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 6723145665917038107, guid: bcee2e75065a17e4a9146311adc4b949, type: 3}
   xRange: 14
-  speed: 8
 --- !u!1 &1557065467
 GameObject:
   m_ObjectHideFlags: 0
