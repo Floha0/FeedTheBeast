@@ -1,2 +1,2 @@
 # FeedTheBeast
- Project of Unity Junior Programmer PathwayLesson 2
+ Project of Unity Junior Programmer Pathway Lesson 2
