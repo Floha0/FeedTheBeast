@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public GameObject projectilePrefab;
+    public GameObject[] projectilePrefab;
     [SerializeField] private float xRange = 14f;
     private float moveHorizontal;
     private float speed = 12f;
@@ -29,10 +29,14 @@ public class PlayerController : MonoBehaviour
             transform.position = new Vector3(-xRange, transform.position.y, transform.position.z);
         }
 
-
+        spawnRandomAnimal();
+    }
+    
+    void spawnRandomAnimal(){
         // Spawn projectile
         if (Input.GetKeyDown(KeyCode.Space)){
-            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+            int projectileIndex = Random.Range(0,projectilePrefab.Length);
+            Instantiate(projectilePrefab[projectileIndex], transform.position, projectilePrefab[projectileIndex].transform.rotation);
         }
     }
 }

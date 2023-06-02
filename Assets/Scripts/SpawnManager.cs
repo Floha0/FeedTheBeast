@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
-    public int animalCount;
     public GameObject[] animalPrefabs;
     private float startTime = 0f;
     private float repeatTime = 4f;
@@ -25,7 +24,6 @@ public class SpawnManager : MonoBehaviour
         float horizontalBound = Random.Range(-12.5f, 12.5f);
 
         // Spawn animal at location
-        animalCount++;
         Instantiate(animalPrefabs[animalIndex], new Vector3(horizontalBound, 0.05f, 12f), animalPrefabs[animalIndex].transform.rotation);
         
     }
