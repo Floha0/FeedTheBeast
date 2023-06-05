@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7269104707411957093}
   m_Layer: 0
   m_Name: Food_Organic_Carrot
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100,6 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   topBound: 10
   projetileSpeed: 20
+  player: {fileID: 4813261239473832686, guid: 9cb2419b79ea8fc4fb52a4fe27758bfe, type: 3}
 --- !u!65 &7199803822161785348
 BoxCollider:
   m_ObjectHideFlags: 0
